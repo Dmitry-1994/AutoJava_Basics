@@ -1,9 +1,10 @@
 package ru.netology.service;
 
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
-public class CashbackHackServiceTest {
+public class CashbackHackServiceJUnit4Test {
 
     CashbackHackService service = new CashbackHackService();
 
@@ -15,6 +16,7 @@ public class CashbackHackServiceTest {
 
         assertEquals(expected, actual);
     }
+
     @Test
     public void remainUpLowerLimit() {
         int amount = 1;
@@ -23,6 +25,7 @@ public class CashbackHackServiceTest {
 
         assertEquals(expected, actual);
     }
+
     @Test
     public void remainMiddleLimit() {
         int amount = 500;
@@ -31,6 +34,7 @@ public class CashbackHackServiceTest {
 
         assertEquals(expected, actual);
     }
+
     @Test
     public void remainLowUpperLimit() {
         int amount = 999;
@@ -39,6 +43,7 @@ public class CashbackHackServiceTest {
 
         assertEquals(expected, actual);
     }
+
     @Test
     public void remainUpperLimit() {
         int amount = 1000;
